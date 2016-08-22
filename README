@@ -1,0 +1,10 @@
+The goal of this script is sessionize the web log by IP. 
+
+Firstly, since IP addresses do not guarantee distinct users, I use IP combined with user_agent as unique identifier for a user.
+
+Secondly, I calculate the time period between requests, if the time period is less than 15 minutes, then the time period is defined as one session. 
+
+In the PageHits.csv, there are 4 fields that are visitor (client's ip + user_agent), session (session count number), hits (all hits within a session), unique_hits (unique hits within a session).
+
+The average session time is: 18434.69085s
+The most engaged user is: 106.186.23.95:56430 with sessions time 66510s in total  
